@@ -1,0 +1,33 @@
+//primaries
+
+$mint: rgb(217, 245, 232);
+$teal: rgb(55, 203, 194);
+$gold: rgb(255, 187, 51);
+$tomato: rgb(255, 99, 71);
+
+$shade-width: 25%;
+$shade-height: 100px;
+
+
+// grid variables
+$grid-columns: 4;
+$grid-max-width: 65em;
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";
+
+
+$mint-light: lighten( $mint, 4% );
+$mint-dark: darken( $mint, 10% );
+
+$teal-light: lighten( $teal, 4% );
+$teal-dark: darken( $teal, 10% );
+
+$mint-teal: mix($mint, $teal, .065);
+$mint-mint: mix($mint, $mint, .065);
+$mint-gold: mix($mint, $gold, .065);
+$mint-tomato: mix($mint, $tomato, .065);
+
+$teal-gold: mix($teal, $gold, .065);
+$teal-tomato: mix($teal, $tomato, .065);

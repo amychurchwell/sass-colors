@@ -1,0 +1,93 @@
+@import "variables";
+@import "mixins";
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper, .row {
+  @extend %clearfix;
+}
+
+.wrapper::after, .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+  border: 1px solid black;
+}
+
+$colors: (
+  'mint': $mint,
+  'teal': $teal,
+  'gold': $gold,
+  'tomato': $tomato
+);
+
+@each $color, $hex in $colors{
+  .#{$color} {
+    float: left;
+    width: $shade-width;
+    height: $shade-height;
+    background-color: $hex;
+  }
+
+  .light-#{$color}{
+    @if $color == 'mint'{
+      float: left;
+      width: $shade-width;
+      height: $shade-height;
+      background-color: lighten( $hex, 4% );
+    } @else {
+      float: left;
+      width: $shade-width;
+      height: $shade-height;
+      background-color: lighten( $hex, 15% );
+    }
+  }
+
+  .darken-#{$color}{
+    float: left;
+    width: $shade-width;
+    height: $shade-height;
+    background-color: darken( $hex, 10% );
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+
+  @for $i from 1 through $grid-columns {
+    //looped content
+
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
