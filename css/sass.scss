@@ -37,7 +37,6 @@ img {
   padding: 1em;
   width: 100%;
   min-height: 1px;
-  border: 1px solid black;
 }
 
 $colors: (
@@ -74,6 +73,29 @@ $colors: (
     width: $shade-width;
     height: $shade-height;
     background-color: darken( $hex, 10% );
+  }
+}
+
+@each $color, $hex in $colors {
+  .mint-#{$color} {
+    background-color: mix($mint, $hex, 35%);
+    width: $mix-width;
+    height: $mix-height;
+  }
+  .teal-#{$color} {
+    background-color: mix($teal, $hex, 35%);
+    width: $mix-width;
+    height: $mix-height;
+  }
+  .gold-#{$color} {
+    background-color: mix($gold, $hex, 35%);
+    width: $mix-width;
+    height: $mix-height;
+  }
+  .tomato-#{$color} {
+    background-color: mix($tomato, $hex, 35%);
+    width: $mix-width;
+    height: $mix-height;
   }
 }
 

@@ -34,80 +34,159 @@ img {
   float: left;
   padding: 1em;
   width: 100%;
-  min-height: 1px;
-  border: 1px solid black; }
+  min-height: 1px; }
 
 .mint {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #d9f5e8; }
 
 .light-mint {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #e9f9f2; }
 
 .darken-mint {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #b1ead0; }
 
 .teal {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #37cbc2; }
 
 .light-teal {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #74dbd5; }
 
 .darken-teal {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #2ba49d; }
 
 .gold {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #ffbb33; }
 
 .light-gold {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #ffd580; }
 
 .darken-gold {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #ffaa00; }
 
 .tomato {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: tomato; }
 
 .light-tomato {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #ffa494; }
 
 .darken-tomato {
   float: left;
-  width: 25%;
+  width: 33.33%;
   height: 100px;
   background-color: #ff3814; }
+
+.mint-mint {
+  background-color: #d9f5e8;
+  width: 100%;
+  height: 100px; }
+
+.teal-mint {
+  background-color: #a0e6db;
+  width: 100%;
+  height: 100px; }
+
+.gold-mint {
+  background-color: #e6e1a9;
+  width: 100%;
+  height: 100px; }
+
+.tomato-mint {
+  background-color: #e6c2b0;
+  width: 100%;
+  height: 100px; }
+
+.mint-teal {
+  background-color: #70dacf;
+  width: 100%;
+  height: 100px; }
+
+.teal-teal {
+  background-color: #37cbc2;
+  width: 100%;
+  height: 100px; }
+
+.gold-teal {
+  background-color: #7dc590;
+  width: 100%;
+  height: 100px; }
+
+.tomato-teal {
+  background-color: #7da797;
+  width: 100%;
+  height: 100px; }
+
+.mint-gold {
+  background-color: #f2cf72;
+  width: 100%;
+  height: 100px; }
+
+.teal-gold {
+  background-color: #b9c165;
+  width: 100%;
+  height: 100px; }
+
+.gold-gold {
+  background-color: #ffbb33;
+  width: 100%;
+  height: 100px; }
+
+.tomato-gold {
+  background-color: #ff9c3a;
+  width: 100%;
+  height: 100px; }
+
+.mint-tomato {
+  background-color: #f2967f;
+  width: 100%;
+  height: 100px; }
+
+.teal-tomato {
+  background-color: #b98772;
+  width: 100%;
+  height: 100px; }
+
+.gold-tomato {
+  background-color: #ff8240;
+  width: 100%;
+  height: 100px; }
+
+.tomato-tomato {
+  background-color: tomato;
+  width: 100%;
+  height: 100px; }
 
 @media only screen and (min-width: 30em) {
   .wrapper {
