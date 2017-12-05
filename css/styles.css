@@ -36,6 +36,12 @@ img {
   width: 100%;
   min-height: 1px; }
 
+.open-sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.bree-serif {
+  font-family: 'Bree Serif', serif; }
+
 .mint {
   float: left;
   width: 33.33%;
@@ -113,15 +119,25 @@ img {
   width: 100%;
   height: 100px; }
 
+.mint-mint-text {
+  color: #d9f5e8; }
+
 .teal-mint {
+  color: #a0e6db;
   background-color: #a0e6db;
   width: 100%;
   height: 100px; }
+
+.teal-mint-text {
+  color: #a0e6db; }
 
 .gold-mint {
   background-color: #e6e1a9;
   width: 100%;
   height: 100px; }
+
+.gold-mint-text {
+  color: #e6e1a9; }
 
 .tomato-mint {
   background-color: #e6c2b0;
@@ -133,15 +149,25 @@ img {
   width: 100%;
   height: 100px; }
 
+.mint-teal-text {
+  color: #70dacf; }
+
 .teal-teal {
+  color: #37cbc2;
   background-color: #37cbc2;
   width: 100%;
   height: 100px; }
+
+.teal-teal-text {
+  color: #37cbc2; }
 
 .gold-teal {
   background-color: #7dc590;
   width: 100%;
   height: 100px; }
+
+.gold-teal-text {
+  color: #7dc590; }
 
 .tomato-teal {
   background-color: #7da797;
@@ -153,15 +179,25 @@ img {
   width: 100%;
   height: 100px; }
 
+.mint-gold-text {
+  color: #f2cf72; }
+
 .teal-gold {
+  color: #b9c165;
   background-color: #b9c165;
   width: 100%;
   height: 100px; }
+
+.teal-gold-text {
+  color: #b9c165; }
 
 .gold-gold {
   background-color: #ffbb33;
   width: 100%;
   height: 100px; }
+
+.gold-gold-text {
+  color: #ffbb33; }
 
 .tomato-gold {
   background-color: #ff9c3a;
@@ -173,15 +209,25 @@ img {
   width: 100%;
   height: 100px; }
 
+.mint-tomato-text {
+  color: #f2967f; }
+
 .teal-tomato {
+  color: #b98772;
   background-color: #b98772;
   width: 100%;
   height: 100px; }
+
+.teal-tomato-text {
+  color: #b98772; }
 
 .gold-tomato {
   background-color: #ff8240;
   width: 100%;
   height: 100px; }
+
+.gold-tomato-text {
+  color: #ff8240; }
 
 .tomato-tomato {
   background-color: tomato;
@@ -204,5 +250,17 @@ img {
 
   .column-4 {
     width: 100%; } }
+h1 {
+  color: #37cbc2;
+  font-family: 'Bree Serif', serif; }
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif; }
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
+  color: lightgray; }
 
 /*# sourceMappingURL=styles.css.map */

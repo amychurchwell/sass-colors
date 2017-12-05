@@ -46,6 +46,14 @@ $colors: (
   'tomato': $tomato
 );
 
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bree-serif {
+  font-family: 'Bree Serif', serif;
+}
+
 @each $color, $hex in $colors{
   .#{$color} {
     float: left;
@@ -77,21 +85,38 @@ $colors: (
 }
 
 @each $color, $hex in $colors {
+
   .mint-#{$color} {
     background-color: mix($mint, $hex, 35%);
     width: $mix-width;
     height: $mix-height;
   }
+
+  .mint-#{$color}-text {
+    color: mix($mint, $hex, 35%);
+  }
+
   .teal-#{$color} {
+    color: mix($teal, $hex, 35%);
     background-color: mix($teal, $hex, 35%);
     width: $mix-width;
     height: $mix-height;
   }
+
+  .teal-#{$color}-text {
+    color: mix($teal, $hex, 35%);
+  }
+
   .gold-#{$color} {
     background-color: mix($gold, $hex, 35%);
     width: $mix-width;
     height: $mix-height;
   }
+
+  .gold-#{$color}-text {
+    color: mix($gold, $hex, 35%);
+  }
+
   .tomato-#{$color} {
     background-color: mix($tomato, $hex, 35%);
     width: $mix-width;
@@ -112,4 +137,20 @@ $colors: (
       width: 100% / $grid-columns * $i;
     }
   }
+}
+
+h1{
+  color: $teal;
+  font-family: 'Bree Serif', serif;
+}
+
+h2{
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
+  color: lightgray;
 }
